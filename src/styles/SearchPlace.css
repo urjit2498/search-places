@@ -1,0 +1,30 @@
+.mainContainer {
+  border: 5px solid rgb(0, 0, 0);
+  width: auto;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    padding: 5px;
+    gap: 5px;
+    margin: 5px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mainContainer {
+    padding: 5px;
+    gap: 5px;
+    margin: 5px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+}

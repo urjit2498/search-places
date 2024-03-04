@@ -13,3 +13,30 @@ td {
 th {
   font-weight: 700;
 }
+
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 4px;
+  }
+  
+  th {
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  table {
+    font-size: 10px;
+  }
+  
+  th,
+  td {
+    padding: 2px;
+  }
+  
+}

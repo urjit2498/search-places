@@ -16,8 +16,9 @@ const SearchInput = ({onSearch, searchTerm, setSearchTerm}) => {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [searchInputRef]);
 
+  
   const handleChange = (event) => {
     setSearchTerm(event.target.value);
   };

@@ -2,14 +2,3 @@
   text-align: center;
   width: 100%;
 }
-
-.mainContainer{
-  border: 5px solid rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 15px;
-}

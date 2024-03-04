@@ -43,7 +43,12 @@ const CustomTable = ({ data, loading, error, onPageChange }) => {
           <td colSpan={3}>No data found</td>
         ) : (
           <>
-            {slicedData.map((item, index) => (
+            {loading ? 
+            <td colSpan={3}>
+              <Loader />
+            </td>
+             : 
+            slicedData.map((item, index) => (
               <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{item?.city}</td>
@@ -60,7 +65,7 @@ const CustomTable = ({ data, loading, error, onPageChange }) => {
     <div>
       <table>
         <thead>{renderTableHeader()}</thead>
-        <tbody>{loading ? <Loader /> : renderTableData()}</tbody>
+        <tbody>{renderTableData()}</tbody>
       </table>
       {totalPages > 1 && !loading && (
         <Pagination totalPages={totalPages} currentPage={currentPage} onPageChange={handlePageChange} />
